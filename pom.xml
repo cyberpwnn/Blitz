@@ -27,11 +27,18 @@
 							<goal>shade</goal>
 						</goals>
 						<configuration>
+							<minimizeJar>true</minimizeJar>
 							<artifactSet>
 								<includes>
 									<include>org.phantomapi:wraith</include>
 								</includes>
 							</artifactSet>
+							<relocations>
+								<relocation>
+									<pattern>wraith</pattern>
+									<shadedPattern>org.cyberpwn.blitz.util</shadedPattern>
+								</relocation>
+							</relocations>
 						</configuration>
 					</execution>
 				</executions>
@@ -102,7 +109,7 @@
 		<dependency>
 			<groupId>org.phantomapi</groupId>
 			<artifactId>wraith</artifactId>
-			<version>Q</version>
+			<version>Q13</version>
 		</dependency>
 	</dependencies>
 </project>

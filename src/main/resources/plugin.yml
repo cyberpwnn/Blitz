@@ -1,0 +1,3 @@
+name: ${project.name}
+main: org.cyberpwn.blitz.Blitz
+version: ${project.version}
